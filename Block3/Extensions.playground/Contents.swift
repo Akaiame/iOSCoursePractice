@@ -159,3 +159,43 @@ monkey1.breath()
 monkey1.eat()
 tiger1.breath()
 tiger1.run()
+
+extension Int {
+    
+    func toPow(pow: Int) -> Int {
+        var result = pow > 0 ? self : 1
+        
+        if pow > 1 {
+            var i = 1
+            
+            while i < pow {
+                result *= self
+                i += 1
+            }
+        }
+        return result
+    }
+}
+
+let num = 4
+num.toPow(pow: 3)
+
+extension String {
+    
+    func isPalindrome(str: String) -> Bool {
+        if str.count < 2 {
+            return false
+        } else if str == String(str.reversed()) {
+            return true
+        } else {
+            return false
+        }
+        
+    }
+    var isPalindrome : Bool {
+        return self.lowercased() == String(self.lowercased().reversed())
+    }
+}
+
+let madam = "Madam"
+madam.isPalindrome

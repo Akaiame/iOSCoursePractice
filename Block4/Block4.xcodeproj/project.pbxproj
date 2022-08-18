@@ -38,6 +38,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A782BB7928AECF2900AA6798 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A7BF4D0828AAD9E900CD5866 /* AppDelegate.swift */,
+				A7BF4D0A28AAD9E900CD5866 /* SceneDelegate.swift */,
+				A7BF4D0C28AAD9E900CD5866 /* ViewController.swift */,
+				A7BF4D0E28AAD9E900CD5866 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		A7BF4CFC28AAD9E800CD5866 = {
 			isa = PBXGroup;
 			children = (
@@ -57,10 +68,7 @@
 		A7BF4D0728AAD9E900CD5866 /* Block4 */ = {
 			isa = PBXGroup;
 			children = (
-				A7BF4D0828AAD9E900CD5866 /* AppDelegate.swift */,
-				A7BF4D0A28AAD9E900CD5866 /* SceneDelegate.swift */,
-				A7BF4D0C28AAD9E900CD5866 /* ViewController.swift */,
-				A7BF4D0E28AAD9E900CD5866 /* Main.storyboard */,
+				A782BB7928AECF2900AA6798 /* Main */,
 				A7BF4D1D28AADA4E00CD5866 /* Practice */,
 				A7BF4D1C28AADA0D00CD5866 /* Resources */,
 			);

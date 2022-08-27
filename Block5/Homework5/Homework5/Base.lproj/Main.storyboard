@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E2D-AW-0tx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Task 1-->
+        <scene sceneID="S9J-IV-A55">
+            <objects>
+                <viewController id="uBX-Dn-OAe" customClass="FirstTaskViewController" customModule="Homework5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j5W-x3-hBx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Duc-1o-76V"/>
+                        <color key="backgroundColor" red="0.48614279844108665" green="0.76967251177915597" blue="0.6820057709914521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Task 1" image="graduationcap.fill" catalog="system" id="YEP-lh-1th"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fc7-eQ-8F6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="516"/>
+        </scene>
+        <!--Task 2-->
+        <scene sceneID="CKG-iV-Hoc">
+            <objects>
+                <viewController id="5zv-mL-m8m" customClass="SecondTaskViewController" customModule="Homework5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DkZ-Cz-oGf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nDL-Qp-Lbe"/>
+                        <color key="backgroundColor" red="0.48461633920000002" green="0.76756078000000005" blue="0.68097132439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Task 2" image="graduationcap.fill" catalog="system" id="nPK-Gb-7JI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2on-c1-75R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911.59420289855075" y="-479.46428571428567"/>
+        </scene>
+        <!--Task 3-->
+        <scene sceneID="dZ4-I8-Cz0">
+            <objects>
+                <viewController id="zYZ-XT-tHJ" customClass="ThirdTaskViewController" customModule="Homework5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d4k-Df-Cqa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Z1u-EQ-TFQ"/>
+                        <color key="backgroundColor" red="0.48461633920000002" green="0.76756078000000005" blue="0.68097132439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Task 3" image="graduationcap.fill" catalog="system" id="cWZ-dA-hEn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4c-MT-G6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2068" y="-479"/>
+        </scene>
+        <!--Task 4-->
+        <scene sceneID="EVj-ZU-2hN">
+            <objects>
+                <viewController id="VP1-i4-3Fi" customClass="FourthTaskViewController" customModule="Homework5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kS8-H1-EQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DWC-kS-FUC"/>
+                        <color key="backgroundColor" red="0.48461633920000002" green="0.76756078000000005" blue="0.68097132439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Task 4" image="graduationcap.fill" catalog="system" id="0c2-xY-of9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVF-vm-LfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2067" y="516"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Nxt-qB-6jK">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="E2D-AW-0tx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2nI-56-Glo">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.97461804728417223" green="1" blue="0.88241486535607172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" systemColor="secondarySystemBackgroundColor"/>
+                        <color key="selectedImageTintColor" red="0.48461633920000002" green="0.76756078000000005" blue="0.68097132439999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uBX-Dn-OAe" kind="relationship" relationship="viewControllers" id="FHG-oL-p2W"/>
+                        <segue destination="5zv-mL-m8m" kind="relationship" relationship="viewControllers" id="wz8-m8-3Jb"/>
+                        <segue destination="zYZ-XT-tHJ" kind="relationship" relationship="viewControllers" id="ng8-pD-OnE"/>
+                        <segue destination="VP1-i4-3Fi" kind="relationship" relationship="viewControllers" id="Mrg-Bj-gfv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Da-nY-Btg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143.47826086956522" y="-26.116071428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="graduationcap.fill" catalog="system" width="128" height="108"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

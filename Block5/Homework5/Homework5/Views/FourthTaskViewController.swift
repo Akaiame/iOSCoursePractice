@@ -17,21 +17,19 @@ class FourthTaskViewController: UIViewController {
     
     func setupUI() {
         
-        let whiteCircle = addCircleFunc(view: view, color: .white, x: 0, y: 0)
-        let yellowCircle = addCircleFunc(view: whiteCircle, color: .yellow, x: 0, y: 0)
-        let greenCircle = addCircleFunc(view: whiteCircle, color: .green, x: 13, y: 0)
-        let redCircle = addCircleFunc(view: whiteCircle, color: .red, x: 10, y: 0)
-        let blueCircle = addCircleFunc(view: whiteCircle, color: .blue, x:7, y: 0)
+        let whiteCircle = addCircleFunc(view: view, color: .white, x: 0, y: 0, size: 2.5)
+        let yellowCircle = addCircleFunc(view: whiteCircle, color: .yellow, x: 0, y: 0, size: 1.5)
+        let greenCircle = addCircleFunc(view: whiteCircle, color: .green, x: 13, y: 0, size: 1.5)
+        let redCircle = addCircleFunc(view: whiteCircle, color: .red, x: 10, y: 0, size: 1.5)
+        let blueCircle = addCircleFunc(view: whiteCircle, color: .blue, x:7, y: 0, size: 1.5)
         
         whiteCircle.center = view.center
+        
         whiteCircle.bringSubviewToFront(yellowCircle)
-//        yellowCircle.center = whiteCircle.center
-//        yellowCircle.center.y = whiteCircle.center.y
-//        greenCircle.center.x = whiteCircle.frame.minX
-//        greenCircle.center.y = whiteCircle.frame.minY
-//        redCircle.center.x = whiteCircle.frame.maxX
-//        redCircle.center.y = whiteCircle.frame.minY
-//        blueCircle.center.x = whiteCircle.frame.maxX
-//        blueCircle.center.y = whiteCircle.frame.minY
+        yellowCircle.center = CGPoint(x: whiteCircle.bounds.minX + 66, y: whiteCircle.bounds.maxY - 66)
+        greenCircle.center = CGPoint(x: whiteCircle.bounds.maxX - 66, y: whiteCircle.bounds.maxY - 66)
+        redCircle.center = CGPoint(x: whiteCircle.bounds.maxX - 66, y: whiteCircle.bounds.minY + 66)
+        blueCircle.center = CGPoint(x: whiteCircle.bounds.minX + 66, y: whiteCircle.bounds.minY + 66)
+        whiteCircle.clipsToBounds = true
     }
 }

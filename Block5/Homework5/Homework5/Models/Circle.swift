@@ -27,9 +27,9 @@ class Circle: UIView {
     
 }
 
-func addCircleFunc(view: UIView, color: UIColor, x: Double, y: Double, size: Double = 100) -> Circle {
-    let circleSize: CGFloat =  view.frame.height / 4
-    let circle = Circle(color: color, x: x, y: y, width: size, height: size)
+func addCircleFunc(view: UIView, color: UIColor, x: Double, y: Double, size: Double = 4) -> Circle {
+    let circleSize: CGFloat =  view.frame.height / size
+    let circle = Circle(color: color, x: x, y: y, width: circleSize, height: circleSize)
     circle.center = CGPoint(x: x, y: y)
     view.addSubview(circle)
     return circle

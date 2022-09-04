@@ -15,7 +15,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         simpleAnimationSetup()
     }
-
+    
     func simpleAnimationSetup() {
         
         bounce.backgroundColor = .yellow
@@ -24,10 +24,9 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func bounceButtonPressed(_ sender: Any) {
-        UIView.animate(withDuration: 1, delay: 0.2, usingSpringWithDamping: 4, initialSpringVelocity: 5, options: [.curveEaseOut, .autoreverse, .repeat]) {
-            self.bounce.center.y = self.view.frame.maxY - 300
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 4, initialSpringVelocity: 5, options: [.repeat, .autoreverse]) {
+            self.bounce.center = self.view.center
         }
-
     }
 }
 

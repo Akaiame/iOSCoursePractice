@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WVS-do-LcG">
-    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -14,12 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMa-0T-AZd">
-                                <rect key="frame" x="8" y="36" width="1008" height="59.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMa-0T-AZd">
+                                <rect key="frame" x="8" y="60" width="412" height="59.666666666666657"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Bounce!">
@@ -36,13 +35,18 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sqd-hX-Qh8">
-                                <rect key="frame" x="412" y="583" width="200" height="200"/>
+                                <rect key="frame" x="114" y="633" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="xMa-0T-AZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="L0M-4E-KfY"/>
+                            <constraint firstItem="xMa-0T-AZd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="XNe-Zt-TdS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xMa-0T-AZd" secondAttribute="trailing" constant="8" id="ySI-xP-W9o"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Animation 1" id="XLW-jZ-stg">
                         <imageReference key="image" image="1.circle" catalog="system" symbolScale="large" renderingMode="hierarchical">
@@ -61,14 +65,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070.5078125" y="-404.09956076134699"/>
+            <point key="canvasLocation" x="1068.2242990654206" y="-404.31965442764584"/>
         </scene>
         <!--Animation 2-->
         <scene sceneID="YAA-ZS-VeB">
             <objects>
                 <viewController id="rLr-HU-13F" customClass="SecondViewController" customModule="animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vNK-hV-hq4">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ISa-eY-U6k"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -92,7 +96,7 @@
             <objects>
                 <viewController id="GKJ-yj-FLm" customClass="ThirdViewController" customModule="animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q27-QE-PSt">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="4Id-ZN-oeX"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>

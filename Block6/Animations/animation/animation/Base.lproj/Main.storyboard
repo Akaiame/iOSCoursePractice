@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sqd-hX-Qh8">
-                                <rect key="frame" x="114" y="633" width="200" height="200"/>
+                                <rect key="frame" x="114" y="617" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -74,8 +74,30 @@
                     <view key="view" contentMode="scaleToFill" id="vNK-hV-hq4">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZA-nH-LPC">
+                                <rect key="frame" x="170.33333333333334" y="437" width="87.333333333333343" height="52.333333333333314"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Run!">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="runButtonPressed:" destination="rLr-HU-13F" eventType="touchUpInside" id="I1u-6y-Hbg"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zux-9T-dFr">
+                                <rect key="frame" x="20" y="44" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ISa-eY-U6k"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="EZA-nH-LPC" firstAttribute="centerY" secondItem="vNK-hV-hq4" secondAttribute="centerY" id="AB7-Lv-68b"/>
+                            <constraint firstItem="EZA-nH-LPC" firstAttribute="centerX" secondItem="vNK-hV-hq4" secondAttribute="centerX" id="p93-Fx-YmC"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Animation 2" id="zl2-qY-PM1">
                         <imageReference key="image" image="2.circle" catalog="system" symbolScale="large" renderingMode="hierarchical">
@@ -86,10 +108,14 @@
                             </hierarchicalColors>
                         </imageReference>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="circle" destination="Zux-9T-dFr" id="8ma-o0-beX"/>
+                        <outlet property="runButton" destination="EZA-nH-LPC" id="3nV-Ve-ugY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbx-Nc-Yn7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="252"/>
+            <point key="canvasLocation" x="1069.6261682242989" y="251.4038876889849"/>
         </scene>
         <!--Animation 3-->
         <scene sceneID="sMN-X5-m1V">
@@ -121,6 +147,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WVS-do-LcG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sax-ve-NaP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

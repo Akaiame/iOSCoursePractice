@@ -17,7 +17,8 @@ class FirstViewController: UIViewController {
     }
     
     func simpleAnimationSetup() {
-        
+        bounce.center.x = view.frame.midX
+        bounce.center.y = view.frame.maxY - bounce.bounds.width
         bounce.backgroundColor = .yellow
         bounce.layer.cornerRadius = bounce.frame.width/2
         view.addSubview(bounce)

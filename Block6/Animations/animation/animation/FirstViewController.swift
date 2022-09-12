@@ -20,13 +20,18 @@ class FirstViewController: UIViewController {
         bounce.center.x = view.frame.midX
         bounce.center.y = view.frame.maxY - bounce.bounds.width
         bounce.backgroundColor = .yellow
-        bounce.layer.cornerRadius = bounce.frame.width/2
+        bounce.layer.cornerRadius = bounce.frame.width / 2
         view.addSubview(bounce)
     }
     
     @IBAction func bounceButtonPressed(_ sender: Any) {
+        
+        let start = view.frame.maxY - bounce.bounds.width
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 4, initialSpringVelocity: 5, options: [.repeat, .autoreverse]) {
+            
             self.bounce.center = self.view.center
+        } completion: { complited in
+            self.bounce.center.y = start
         }
     }
 }

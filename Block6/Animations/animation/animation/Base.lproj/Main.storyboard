@@ -124,8 +124,59 @@
                     <view key="view" contentMode="scaleToFill" id="q27-QE-PSt">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avr-ht-S5r">
+                                <rect key="frame" x="4" y="772" width="420" height="47"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start!">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="33"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAnimationButtonPressed:" destination="GKJ-yj-FLm" eventType="touchUpInside" id="iVC-td-UsR"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="pkq-Za-eRB" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="94" y="88" width="240" height="242"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="46361-weather-icon-mostly-sunny.json"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4XV-aT-VCG" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="127" y="504" width="174" height="174"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="QG5-qK-C0p"/>
+                                    <constraint firstAttribute="height" constant="174" id="erj-md-heJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="36240-rain-icon"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4Id-ZN-oeX"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Avr-ht-S5r" firstAttribute="top" secondItem="4XV-aT-VCG" secondAttribute="bottom" constant="94" id="642-Ji-EH1"/>
+                            <constraint firstItem="pkq-Za-eRB" firstAttribute="top" secondItem="4Id-ZN-oeX" secondAttribute="top" constant="44" id="AYA-0e-gyw"/>
+                            <constraint firstItem="4Id-ZN-oeX" firstAttribute="trailing" secondItem="4XV-aT-VCG" secondAttribute="trailing" constant="127" id="NK0-Uf-71E"/>
+                            <constraint firstItem="Avr-ht-S5r" firstAttribute="leading" secondItem="4Id-ZN-oeX" secondAttribute="leading" constant="4" id="Sg0-wy-Prq"/>
+                            <constraint firstItem="4Id-ZN-oeX" firstAttribute="trailing" secondItem="Avr-ht-S5r" secondAttribute="trailing" constant="4" id="dlA-St-ye0"/>
+                            <constraint firstItem="4Id-ZN-oeX" firstAttribute="bottom" secondItem="Avr-ht-S5r" secondAttribute="bottom" constant="24" id="jO6-HR-q9U"/>
+                            <constraint firstItem="4XV-aT-VCG" firstAttribute="top" secondItem="pkq-Za-eRB" secondAttribute="bottom" constant="174" id="n7A-W2-Yxt"/>
+                            <constraint firstItem="4XV-aT-VCG" firstAttribute="leading" secondItem="4Id-ZN-oeX" secondAttribute="leading" constant="127" id="oUW-gE-h4j"/>
+                            <constraint firstItem="pkq-Za-eRB" firstAttribute="leading" secondItem="4Id-ZN-oeX" secondAttribute="leading" constant="94" id="unU-Gt-ftw"/>
+                            <constraint firstItem="4Id-ZN-oeX" firstAttribute="trailing" secondItem="pkq-Za-eRB" secondAttribute="trailing" constant="94" id="wtD-8M-IFE"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Animation 3" id="OA6-uU-RQd">
                         <imageReference key="image" image="3.circle" catalog="system" symbolScale="large" renderingMode="hierarchical">
@@ -136,10 +187,15 @@
                             </hierarchicalColors>
                         </imageReference>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="rainWeatherAnimation" destination="4XV-aT-VCG" id="7kJ-7K-6iI"/>
+                        <outlet property="startAnimationButton" destination="Avr-ht-S5r" id="1mS-c4-Pfd"/>
+                        <outlet property="sunWeatherAnimation" destination="pkq-Za-eRB" id="h3N-S2-wLh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIs-k3-uoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="875"/>
+            <point key="canvasLocation" x="131.77570093457942" y="874.73002159827217"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="T2H-Qi-ikq">
@@ -177,6 +233,9 @@
         </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

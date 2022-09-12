@@ -29,17 +29,6 @@ class SecondViewController: UIViewController {
     @IBAction func runButtonPressed(_ sender: Any) {
         let start = self.circle.center
         
-//        UIView.animate(withDuration: 1.0, delay: 0.5, usingSpringWithDamping: 0.6, initialSpringVelocity: 1, options: [.curveEaseIn]) {
-//            self.circle.transform = .identity
-//            self.circle.alpha = 1
-//
-//        } completion: { complited in
-//            UIView.animate(withDuration: 1.0, delay: 0.5, usingSpringWithDamping: 0.6, initialSpringVelocity: 1, options: [.curveEaseOut], animations: {
-//                   self.circle.transform = CGAffineTransform.identity.scaledBy(x: 0.7, y: 0.7)
-//                   self.circle.alpha = 0
-//               })
-//        }
-
         UIView.animateKeyframes(withDuration: 4, delay: 0, animations: {
             
             UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.25) {

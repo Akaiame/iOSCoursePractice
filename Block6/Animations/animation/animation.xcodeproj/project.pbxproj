@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31F30CE6237394D02E765258 /* Pods_animation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F653BFC1FC5075098019F8D9 /* Pods_animation.framework */; };
 		A700545328C4E79E002FE6F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700545228C4E79E002FE6F7 /* AppDelegate.swift */; };
 		A700545528C4E79E002FE6F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700545428C4E79E002FE6F7 /* SceneDelegate.swift */; };
 		A700545728C4E79E002FE6F7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700545628C4E79E002FE6F7 /* FirstViewController.swift */; };
@@ -15,9 +16,14 @@
 		A700545F28C4E7A2002FE6F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A700545D28C4E7A2002FE6F7 /* LaunchScreen.storyboard */; };
 		A700546728C50DA2002FE6F7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700546628C50DA2002FE6F7 /* SecondViewController.swift */; };
 		A700546928C50DB8002FE6F7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700546828C50DB8002FE6F7 /* ThirdViewController.swift */; };
+		A7CCE8A928CA78FE00FC208F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A7CCE8A828CA78FE00FC208F /* Podfile */; };
+		A7CCE8AD28CA84BC00FC208F /* 36240-rain-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CCE8AB28CA84BC00FC208F /* 36240-rain-icon.json */; };
+		A7CCE8AE28CA84BC00FC208F /* 46361-weather-icon-mostly-sunny.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CCE8AC28CA84BC00FC208F /* 46361-weather-icon-mostly-sunny.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37C9AB5945AE4FE8FA3CC5C5 /* Pods-animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animation.release.xcconfig"; path = "Target Support Files/Pods-animation/Pods-animation.release.xcconfig"; sourceTree = "<group>"; };
+		96358637903C9D96D1D410C2 /* Pods-animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animation.debug.xcconfig"; path = "Target Support Files/Pods-animation/Pods-animation.debug.xcconfig"; sourceTree = "<group>"; };
 		A700544F28C4E79E002FE6F7 /* animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A700545228C4E79E002FE6F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A700545428C4E79E002FE6F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +34,10 @@
 		A700546028C4E7A2002FE6F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A700546628C50DA2002FE6F7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A700546828C50DB8002FE6F7 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		A7CCE8A828CA78FE00FC208F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7CCE8AB28CA84BC00FC208F /* 36240-rain-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "36240-rain-icon.json"; path = "../../../../../../../Downloads/36240-rain-icon.json"; sourceTree = "<group>"; };
+		A7CCE8AC28CA84BC00FC208F /* 46361-weather-icon-mostly-sunny.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "46361-weather-icon-mostly-sunny.json"; path = "../../../../../../../Downloads/46361-weather-icon-mostly-sunny.json"; sourceTree = "<group>"; };
+		F653BFC1FC5075098019F8D9 /* Pods_animation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_animation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F30CE6237394D02E765258 /* Pods_animation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D52A4404AEA1A3E872FAC95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F653BFC1FC5075098019F8D9 /* Pods_animation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47F7E70E5E8D95DE1E6331CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96358637903C9D96D1D410C2 /* Pods-animation.debug.xcconfig */,
+				37C9AB5945AE4FE8FA3CC5C5 /* Pods-animation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A700544628C4E79E002FE6F7 = {
 			isa = PBXGroup;
 			children = (
 				A700545128C4E79E002FE6F7 /* animation */,
 				A700545028C4E79E002FE6F7 /* Products */,
+				47F7E70E5E8D95DE1E6331CD /* Pods */,
+				3D52A4404AEA1A3E872FAC95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +90,8 @@
 		A700545128C4E79E002FE6F7 /* animation */ = {
 			isa = PBXGroup;
 			children = (
+				A7CCE8AA28CA82E700FC208F /* animations */,
+				A7CCE8A828CA78FE00FC208F /* Podfile */,
 				A700545228C4E79E002FE6F7 /* AppDelegate.swift */,
 				A700545428C4E79E002FE6F7 /* SceneDelegate.swift */,
 				A700545628C4E79E002FE6F7 /* FirstViewController.swift */,
@@ -73,6 +105,15 @@
 			path = animation;
 			sourceTree = "<group>";
 		};
+		A7CCE8AA28CA82E700FC208F /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				A7CCE8AB28CA84BC00FC208F /* 36240-rain-icon.json */,
+				A7CCE8AC28CA84BC00FC208F /* 46361-weather-icon-mostly-sunny.json */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A700546328C4E7A2002FE6F7 /* Build configuration list for PBXNativeTarget "animation" */;
 			buildPhases = (
+				1AB41A33A116A655944AF08C /* [CP] Check Pods Manifest.lock */,
 				A700544B28C4E79E002FE6F7 /* Sources */,
 				A700544C28C4E79E002FE6F7 /* Frameworks */,
 				A700544D28C4E79E002FE6F7 /* Resources */,
+				EF44D88AB9A5DF85C52B03D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +176,56 @@
 			files = (
 				A700545F28C4E7A2002FE6F7 /* LaunchScreen.storyboard in Resources */,
 				A700545C28C4E7A2002FE6F7 /* Assets.xcassets in Resources */,
+				A7CCE8AE28CA84BC00FC208F /* 46361-weather-icon-mostly-sunny.json in Resources */,
+				A7CCE8A928CA78FE00FC208F /* Podfile in Resources */,
 				A700545A28C4E79E002FE6F7 /* Main.storyboard in Resources */,
+				A7CCE8AD28CA84BC00FC208F /* 36240-rain-icon.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AB41A33A116A655944AF08C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-animation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF44D88AB9A5DF85C52B03D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-animation/Pods-animation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-animation/Pods-animation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-animation/Pods-animation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A700544B28C4E79E002FE6F7 /* Sources */ = {
@@ -290,6 +378,7 @@
 		};
 		A700546428C4E7A2002FE6F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96358637903C9D96D1D410C2 /* Pods-animation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +407,7 @@
 		};
 		A700546528C4E7A2002FE6F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C9AB5945AE4FE8FA3CC5C5 /* Pods-animation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -38,7 +38,7 @@ class ExchangeRates: UIView {
     @IBOutlet weak var euro: UILabel!
     @IBOutlet weak var usdRate: UILabel!
     @IBOutlet weak var euroRate: UILabel!
-    let gradient = CAGradientLayer()
+    let gradiant = CAGradientLayer()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -54,7 +54,7 @@ class ExchangeRates: UIView {
     
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: layer)
-        self.gradient.frame = contentView.bounds
+        self.gradiant.frame = contentView.bounds
     }
     
     func commonInit() {
@@ -77,11 +77,11 @@ class ExchangeRates: UIView {
         let firstColor = #colorLiteral(red: 0.2666666667, green: 0.3803921569, blue: 0.4549019608, alpha: 1).cgColor
         let secondColor = #colorLiteral(red: 0.332986176, green: 0.4574436545, blue: 0.5485693812, alpha: 1).cgColor
         
-        gradient.colors = [firstColor, secondColor]
+        gradiant.colors = [firstColor, secondColor]
         
-        gradient.startPoint = CGPoint(x: 0.0, y: 0.5       )
-        gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
-       contentView.layer.insertSublayer(gradient, at: 0)
+        gradiant.startPoint = CGPoint(x: 0.0, y: 0.5       )
+        gradiant.endPoint = CGPoint(x: 1.0, y: 0.5)
+       contentView.layer.insertSublayer(gradiant, at: 0)
         
     }
     

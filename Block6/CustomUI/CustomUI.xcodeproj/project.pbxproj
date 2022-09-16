@@ -15,9 +15,9 @@
 		A793E12428CF83EE003D1CE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A793E12228CF83EE003D1CE5 /* LaunchScreen.storyboard */; };
 		A793E12D28CF9656003D1CE5 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793E12C28CF9656003D1CE5 /* ExchangeRates.swift */; };
 		A793E12F28CF9679003D1CE5 /* ExchangeRates.xib in Resources */ = {isa = PBXBuildFile; fileRef = A793E12E28CF9679003D1CE5 /* ExchangeRates.xib */; };
-		A793E13128CFA8DC003D1CE5 /* 1231.png in Resources */ = {isa = PBXBuildFile; fileRef = A793E13028CFA8DC003D1CE5 /* 1231.png */; };
 		A7BBA85E28D3606D005178A2 /* MenuBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BBA85D28D3606D005178A2 /* MenuBlock.swift */; };
 		A7BBA86028D3607D005178A2 /* MenuBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7BBA85F28D3607D005178A2 /* MenuBlock.xib */; };
+		A7F4971028D4D7130059EE5F /* GradientSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F4970F28D4D7130059EE5F /* GradientSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		A793E12528CF83EE003D1CE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A793E12C28CF9656003D1CE5 /* ExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
 		A793E12E28CF9679003D1CE5 /* ExchangeRates.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeRates.xib; sourceTree = "<group>"; };
-		A793E13028CFA8DC003D1CE5 /* 1231.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1231.png; path = ../../../../../Downloads/1231.png; sourceTree = "<group>"; };
 		A7BBA85D28D3606D005178A2 /* MenuBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBlock.swift; sourceTree = "<group>"; };
 		A7BBA85F28D3607D005178A2 /* MenuBlock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuBlock.xib; sourceTree = "<group>"; };
+		A7F4970F28D4D7130059EE5F /* GradientSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientSetup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,16 +66,13 @@
 		A793E11628CF83EC003D1CE5 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				A7F4970D28D4C9C10059EE5F /* Application */,
 				A7BBA85C28D36045005178A2 /* MenuBlock */,
 				A793E12B28CF91DE003D1CE5 /* ExchangeRates */,
-				A793E11728CF83EC003D1CE5 /* AppDelegate.swift */,
-				A793E11928CF83EC003D1CE5 /* SceneDelegate.swift */,
 				A793E11B28CF83EC003D1CE5 /* MainViewController.swift */,
+				A7F4970F28D4D7130059EE5F /* GradientSetup.swift */,
 				A793E11D28CF83EC003D1CE5 /* Main.storyboard */,
-				A793E12028CF83EE003D1CE5 /* Assets.xcassets */,
-				A793E13028CFA8DC003D1CE5 /* 1231.png */,
-				A793E12228CF83EE003D1CE5 /* LaunchScreen.storyboard */,
-				A793E12528CF83EE003D1CE5 /* Info.plist */,
+				A7F4970E28D4CA390059EE5F /* Resources */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -96,6 +93,25 @@
 				A7BBA85F28D3607D005178A2 /* MenuBlock.xib */,
 			);
 			path = MenuBlock;
+			sourceTree = "<group>";
+		};
+		A7F4970D28D4C9C10059EE5F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A793E11728CF83EC003D1CE5 /* AppDelegate.swift */,
+				A793E11928CF83EC003D1CE5 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A7F4970E28D4CA390059EE5F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A793E12028CF83EE003D1CE5 /* Assets.xcassets */,
+				A793E12228CF83EE003D1CE5 /* LaunchScreen.storyboard */,
+				A793E12528CF83EE003D1CE5 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +175,6 @@
 				A7BBA86028D3607D005178A2 /* MenuBlock.xib in Resources */,
 				A793E12F28CF9679003D1CE5 /* ExchangeRates.xib in Resources */,
 				A793E12428CF83EE003D1CE5 /* LaunchScreen.storyboard in Resources */,
-				A793E13128CFA8DC003D1CE5 /* 1231.png in Resources */,
 				A793E12128CF83EE003D1CE5 /* Assets.xcassets in Resources */,
 				A793E11F28CF83EC003D1CE5 /* Main.storyboard in Resources */,
 			);
@@ -173,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A793E12D28CF9656003D1CE5 /* ExchangeRates.swift in Sources */,
+				A7F4971028D4D7130059EE5F /* GradientSetup.swift in Sources */,
 				A793E11C28CF83EC003D1CE5 /* MainViewController.swift in Sources */,
 				A793E11828CF83EC003D1CE5 /* AppDelegate.swift in Sources */,
 				A7BBA85E28D3606D005178A2 /* MenuBlock.swift in Sources */,
@@ -325,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QUHXFK7735;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CustomUI/Info.plist;
+				INFOPLIST_FILE = CustomUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -353,7 +369,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QUHXFK7735;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CustomUI/Info.plist;
+				INFOPLIST_FILE = CustomUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

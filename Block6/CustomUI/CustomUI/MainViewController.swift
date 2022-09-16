@@ -9,30 +9,32 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var rightMenuBlock: MenuBlock!
+    @IBOutlet weak var leftMenuBlock: MenuBlock!
+    @IBOutlet weak var topMenuBlock: MenuBlock!
     @IBOutlet weak var infoView: UIView!
-    let gradiant = CAGradientLayer()
     
-   
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        gradiant.frame = infoView.bounds
+        
+        gradientSetup(view: self.infoView, colors: [#colorLiteral(red: 0, green: 0.5191636682, blue: 0.468101263, alpha: 1).cgColor, #colorLiteral(red: 0, green: 0.6623525023, blue: 0.4157736599, alpha: 1).cgColor], startPoint: CGPoint(x: 0.0, y: 1.0), endPoint: CGPoint(x: 1.0, y: 0.0), at: 0)
+        self.view.backgroundColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.1176470588, alpha: 1)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        
+        setupMenuBlock()
     }
     
-    func setupUI() {
-        
-        self.view.backgroundColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.1176470588, alpha: 1)
-        let firstColor = #colorLiteral(red: 0.0431372549, green: 0.4509803922, blue: 0.3921568627, alpha: 1).cgColor
-        let secondColor = #colorLiteral(red: 0.05098039216, green: 0.6117647059, blue: 0.3411764706, alpha: 1).cgColor
-        
-        gradiant.colors = [firstColor, secondColor]
-        gradiant.startPoint = CGPoint(x: 0.0, y: 1.0)
-        gradiant.endPoint = CGPoint(x: 1.0, y: 0.0)
-        infoView.layer.insertSublayer(gradiant, at: 0)
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    func setupMenuBlock() {
+        topMenuBlock.configure(with: "Рассрочка на карту", image: "installment", colors: [#colorLiteral(red: 0.09411764706, green: 0.5921568627, blue: 0.4901960784, alpha: 1).cgColor, #colorLiteral(red: 0.1803921569, green: 0.737254902, blue: 0.4235294118, alpha: 1).cgColor], startPoint: CGPoint(x: 0.0, y: 0.0), endPoint: CGPoint(x: 1.0, y: 1.0), at: 0)
+        leftMenuBlock.configure(with: "Покупка частями", image: "puzzle", colors: [#colorLiteral(red: 0.4588235294, green: 0.3568627451, blue: 0.6901960784, alpha: 1).cgColor, #colorLiteral(red: 0.4901960784, green: 0.3843137255, blue: 0.7333333333, alpha: 1).cgColor], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), at: 0)
+        rightMenuBlock.configure(with: "Архив", image: "folder", colors: [#colorLiteral(red: 0.4941176471, green: 0.6039215686, blue: 0.6470588235, alpha: 1).cgColor, #colorLiteral(red: 0.4196078431, green: 0.537254902, blue: 0.5921568627, alpha: 1).cgColor], startPoint: CGPoint(x: 0.5, y: 0.5), endPoint: CGPoint(x: 1.0, y: 1.0), at: 0)
     }
 }
 

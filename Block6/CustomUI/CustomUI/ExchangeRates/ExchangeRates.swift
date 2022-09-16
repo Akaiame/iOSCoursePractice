@@ -5,7 +5,6 @@
 //  Created by Дмитрий Ильичёв on 12.09.2022.
 //
 
-import Foundation
 import UIKit
 
 extension UIView {
@@ -38,54 +37,37 @@ class ExchangeRates: UIView {
     @IBOutlet weak var euro: UILabel!
     @IBOutlet weak var usdRate: UILabel!
     @IBOutlet weak var euroRate: UILabel!
-    let gradiant = CAGradientLayer()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
-        setupUI()
     }
     
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: layer)
-        self.gradiant.frame = contentView.bounds
+        setupUI()
     }
     
     func commonInit() {
         Bundle.main
             .loadNibNamed("ExchangeRates", owner: self, options: nil)
         contentView.fixInView(self)
-        
     }
     
     func setupUI() {
-        
         usdView.roundCorners(corners: [.bottomLeft, .topLeft], radius: 15)
         euroView.roundCorners(corners: [.topRight, .bottomRight], radius: 15)
         usdView.backgroundColor = UIColor(white: 1, alpha: 0.1)
         euroView.backgroundColor = UIColor(white: 1, alpha: 0.1)
         usd.alpha = 0.5
         euro.alpha = 0.5
-        
-        
-        let firstColor = #colorLiteral(red: 0.2666666667, green: 0.3803921569, blue: 0.4549019608, alpha: 1).cgColor
-        let secondColor = #colorLiteral(red: 0.332986176, green: 0.4574436545, blue: 0.5485693812, alpha: 1).cgColor
-        
-        gradiant.colors = [firstColor, secondColor]
-        
-        gradiant.startPoint = CGPoint(x: 0.0, y: 0.5       )
-        gradiant.endPoint = CGPoint(x: 1.0, y: 0.5)
-       contentView.layer.insertSublayer(gradiant, at: 0)
-        
+        gradientSetup(view: self.contentView, colors: [#colorLiteral(red: 0.2666666667, green: 0.3803921569, blue: 0.4549019608, alpha: 1).cgColor, #colorLiteral(red: 0.332986176, green: 0.4574436545, blue: 0.5485693812, alpha: 1).cgColor], startPoint: CGPoint(x: 0.0, y: 0.5), endPoint: CGPoint(x: 1.0, y: 0.5), at: 0)
     }
-    
-    
 }
 
 extension UIView {

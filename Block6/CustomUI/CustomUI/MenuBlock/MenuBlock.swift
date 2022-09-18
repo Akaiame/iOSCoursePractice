@@ -32,8 +32,13 @@ class MenuBlock: UIView {
     }
     
     func setupUI() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.viewPressed))
+        self.contentView.addGestureRecognizer(tap)
         contentView.backgroundColor = #colorLiteral(red: 0.2030155063, green: 0.2030155063, blue: 0.2030155063, alpha: 1)
         circleIcon.layer.cornerRadius = circleIcon.frame.width / 2
+    }
+    @objc func viewPressed(_ sender: UITapGestureRecognizer) {
+        print("Hello")
     }
     
     func configure(with text: String, image: String, colors: [CGColor], startPoint: CGPoint, endPoint: CGPoint, at layer: UInt32)
@@ -43,7 +48,6 @@ class MenuBlock: UIView {
         customImage.image = UIImage(named: image)
         
     }
-    
 }
 
 

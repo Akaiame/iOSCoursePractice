@@ -7,7 +7,20 @@
 
 import UIKit
 
+protocol MenuBlockDelegate: NSObject {
+    func viewPressed(item: MenuTag)
+}
+
+enum MenuTag: String {
+    case topMenuBlock = "1"
+    case leftMenuBlock = "2"
+    case rightMenuBlock = "3"
+}
+
 class MenuBlock: UIView {
+    
+    var delegate: MenuBlockDelegate?
+    var menuTag: MenuTag?
     
     @IBOutlet weak var customImage: UIImageView!
     @IBOutlet weak var infoLabel: UILabel!
@@ -37,15 +50,18 @@ class MenuBlock: UIView {
         contentView.backgroundColor = #colorLiteral(red: 0.2030155063, green: 0.2030155063, blue: 0.2030155063, alpha: 1)
         circleIcon.layer.cornerRadius = circleIcon.frame.width / 2
     }
+    
     @objc func viewPressed(_ sender: UITapGestureRecognizer) {
-        print("Hello")
+        delegate?.viewPressed(item: self.menuTag!)
+        
     }
     
-    func configure(with text: String, image: String, colors: [CGColor], startPoint: CGPoint, endPoint: CGPoint, at layer: UInt32)
+    func configure(with text: String, image: String, colors: [CGColor], startPoint: CGPoint, endPoint: CGPoint, at layer: UInt32, tag: MenuTag)
     {
         gradientSetup(view: self.circleIcon, colors: colors , startPoint: startPoint, endPoint: endPoint, at: layer)
         infoLabel.text = text
         customImage.image = UIImage(named: image)
+        self.menuTag = tag
         
     }
 }

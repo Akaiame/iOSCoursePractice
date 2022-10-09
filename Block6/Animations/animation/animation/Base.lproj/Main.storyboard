@@ -127,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avr-ht-S5r">
-                                <rect key="frame" x="4" y="772" width="420" height="47"/>
+                                <rect key="frame" x="4" y="772.66666666666652" width="420" height="46.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start!">
                                     <backgroundConfiguration key="background">
@@ -146,14 +146,14 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pkq-Za-eRB" customClass="AnimationView" customModule="Lottie">
-                                <rect key="frame" x="94" y="91" width="240" height="239"/>
+                                <rect key="frame" x="94" y="91" width="240" height="239.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="46361-weather-icon-mostly-sunny.json"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4XV-aT-VCG" customClass="AnimationView" customModule="Lottie">
-                                <rect key="frame" x="127" y="504" width="174" height="174"/>
+                                <rect key="frame" x="127" y="504.66666666666674" width="174" height="174"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="174" id="QG5-qK-C0p"/>
